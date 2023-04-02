@@ -1,0 +1,25 @@
+@font-face {
+	font-family: "Gasalt-Regular";
+	src: url("/assets/Gasalt-Regular.woff2") format("woff2");
+	font-display: swap;
+}
+
+:root {
+	--background-color: rgb(23, 27, 42);
+	--font-color: rgb(192, 137, 168);
+	--font-base: "Gasalt-Regular";
+}
+
+body #canvas {
+	border: 1px solid #000;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--font-base);
+	background-color: var(--background-color);
+	color: var(--font-color);
+}
