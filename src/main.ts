@@ -172,33 +172,6 @@ const main = () => {
 					}
 				}
 			}
-
-			/*
-			const leftPosition = { x: Math.max(x - 1, minColumn), y };
-			if (presenceGrid[leftPosition.x][leftPosition.y] > 0) {// is a Blue boid left of us?
-				const forceMultiplier = presenceGrid[leftPosition.x][leftPosition.y];
-				const position = { x: leftPosition.x*presenseGranularity, y: leftPosition.y*presenseGranularity }
-				Body.applyForce(body, position, { x: attractionalForce * forceMultiplier, y: 0 });
-			}
-			const rightPosition = { x: Math.min(x + 1, maxColumn), y };
-			if (presenceGrid[rightPosition.x][rightPosition.y] > 0) {
-				const forceMultiplier = presenceGrid[rightPosition.x][rightPosition.y];
-				const position = { x: rightPosition.x*presenseGranularity, y: rightPosition.y*presenseGranularity }
-				Body.applyForce(body, position, { x: attractionalForce * forceMultiplier, y: 0 });
-			}
-			const topPosition = { x, y: Math.max(y - 1, minRow) };
-			if (presenceGrid[topPosition.x][topPosition.y] > 0) {
-				const forceMultiplier = presenceGrid[topPosition.x][topPosition.y];
-				const position = { x: topPosition.x*presenseGranularity, y: topPosition.y*presenseGranularity }
-				Body.applyForce(body, position, { x: 0, y: attractionalForce * forceMultiplier });
-			}
-			const bottomPosition = { x, y: Math.min(y + 1, maxRow) };
-			if (presenceGrid[bottomPosition.x][bottomPosition.y] > 0) {
-				const forceMultiplier = presenceGrid[bottomPosition.x][bottomPosition.y];
-				const position = { x: bottomPosition.x*presenseGranularity, y: bottomPosition.y*presenseGranularity }
-				Body.applyForce(body, position, { x: 0, y: attractionalForce * forceMultiplier });
-			}
-			*/
 		});
 	};
 
